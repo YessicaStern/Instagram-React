@@ -10,7 +10,7 @@ body{
 *{
     box-sizing: border-box;
 }
-.icons,.icons2,.icons3,.storiesbox, h1,h2,h3,h4,h5,h6,strong,.bot2 img,.point,img{
+.icons,.icons2,.red,.icons3,.storiesbox, h1,h2,h3,h4,h5,h6,strong,.bot2 img,.point,img{
     cursor: pointer;
 }
 .top{
@@ -113,7 +113,6 @@ body{
     /*padding-left: 20px;*/
     background-color: #FFFFFF;
     overflow-x: scroll;
-    
 }
 .stories{
     width: 100%;
@@ -168,7 +167,6 @@ body{
  }
 
 /************************ Feed ***********************/
-
 
 
 .feed{
@@ -245,8 +243,13 @@ body{
     margin-right: 20px;
     font-size: 120%;
 }
-.icons2{
+.icons2,.red{
     font-size: 150%;
+    color: black;
+}
+.red{
+    color: red ;
+ 
 }
 .icons2:nth-child(2){
     margin: auto 15px;
@@ -392,7 +395,10 @@ strong{
 .sidebar h5{
     margin: 30px auto 15px auto;
 }
-
+.bottomBar{
+    display: none;
+}
+    
 
 /*-----------------------------------------------------META-------------------------------------------------------*/
 
@@ -408,16 +414,16 @@ strong{
        margin-left: 555px;
        top:140px; 
     }
+    .bottomBar{
+        display: none;
     }
+}
         
-        
-    @media (max-width: 600px){
+    @media (max-width: 614px){
     .top, .seta{
         display: none;
     }
-    body{
-        height: 100%;
-    }
+   
     .topo2{
         display:grid;
         height: 55px;
@@ -435,7 +441,7 @@ strong{
         align-items: center;
         justify-content: space-between;
     }
-    .icons2{
+    .icons2 ,.red{
         margin: auto 20px;
     }
     
@@ -447,7 +453,7 @@ strong{
     }
     .bottomBar{
         display: grid;
-        width: 600px;
+        width: 614px;
         height: 55px;
         border: 1px solid #DBDBDB;  
         position: fixed;
