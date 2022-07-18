@@ -155,15 +155,14 @@ body{
     border: 1px solid transparent;
     box-sizing: border-box;
 }
- .seta{
-     width: 1.5%;
-     height: 1.5%;
+ .arrow{
+     font-size: 140%;
      Fill: Solid #FFFFFF;
      color: #ffffff;
      border-radius:200% ;
      position: absolute;
      margin-left: 550px;
-     top:150px; 
+     top:180px; 
  }
 
 /************************ Feed ***********************/
@@ -410,7 +409,7 @@ strong{
         width: 600px;
         height: auto;
      }
-     .seta{
+     .arrow{
        margin-left: 555px;
        top:140px; 
     }
@@ -420,7 +419,7 @@ strong{
 }
         
     @media (max-width: 614px){
-    .top, .seta{
+    .top, .arrow{
         display: none;
     }
    
