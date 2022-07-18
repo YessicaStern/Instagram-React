@@ -17,14 +17,14 @@ function FeedTemplate(props){
                
                 
                      <div class="boxmid">
-                     <img src={props.image} onClick={()=> {if (heart==="heart-outline") {setHeart("heart");setColor("md hydrated red");console.log(heart)}else{setHeart("heart-outline");setColor("md hydrated icons2");console.log(heart)}}} />
+                     <img src={props.image} onDoubleClick={()=> {if (heart==="heart-outline") {setHeart("heart");setColor("md hydrated red");console.log(heart)}else{setHeart("heart-outline");setColor("md hydrated icons2");console.log(heart)}}} />
                     </div>
 
 
                      <div class="boxbot">
                          <div class="bot1">
                          <div class="bot11">
-                            <ion-icon name={heart} class={color} onClick={()=> {if (setHeart==="heart-outline") {setHeart("heart");setColor("md hydrated red");console.log(heart)}else{setHeart("heart-outline");setColor("md hydrated icons2");console.log(heart)}}} />
+                            <ion-icon name={heart} class={color} onClick={()=> {if (heart==="heart-outline") {setHeart("heart");setColor("md hydrated red");console.log(heart)}else{setHeart("heart-outline");setColor("md hydrated icons2");console.log(heart)}}} />
                             {icon.map((icons)=>(<ion-icon name={icons} class="icons2"></ion-icon>))}
                          </div>
 
